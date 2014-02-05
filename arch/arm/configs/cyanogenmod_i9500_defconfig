@@ -599,7 +599,7 @@ CONFIG_ALIGNMENT_TRAP=y
 # CONFIG_USE_OF is not set
 CONFIG_ZBOOT_ROM_TEXT=0
 CONFIG_ZBOOT_ROM_BSS=0
-CONFIG_CMDLINE="zswap.enabled=0 zswap.compressor=snappy androidboot.selinux=permissive"
+CONFIG_CMDLINE="console=ttySAC2,115200n8 vmalloc=512M androidboot.console=ttySAC2 zswap.enabled=0 zswap.compressor=snappy androidboot.selinux=permissive"
 # CONFIG_CMDLINE_FROM_BOOTLOADER is not set
 CONFIG_CMDLINE_EXTEND=y
 # CONFIG_CMDLINE_FORCE is not set
@@ -2489,7 +2489,7 @@ CONFIG_USB_GADGET_DUALSPEED=y
 # CONFIG_USB_G_PRINTER is not set
 CONFIG_USB_G_ANDROID=y
 CONFIG_USB_ANDROID_SAMSUNG_COMPOSITE=y
-CONFIG_USB_ANDROID_SAMSUNG_MTP=y
+# CONFIG_USB_ANDROID_SAMSUNG_MTP is not set
 CONFIG_USB_DUN_SUPPORT=y
 # CONFIG_USB_CDC_COMPOSITE is not set
 # CONFIG_USB_G_NOKIA is not set
@@ -2955,7 +2955,6 @@ CONFIG_NLS_ISO8859_1=y
 # CONFIG_NLS_KOI8_R is not set
 # CONFIG_NLS_KOI8_U is not set
 CONFIG_NLS_UTF8=y
-CONFIG_DYNAMIC_FSYNC=y
 
 #
 # Kernel hacking
